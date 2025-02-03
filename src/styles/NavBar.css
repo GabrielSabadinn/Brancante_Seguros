@@ -66,13 +66,13 @@
 }
 
 .container-close {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: none;
   align-items: center;
   padding-right: 10px;
 }
 
 .close {
+  display: none;
   background: none;
   border: none;
   font-size: 14px;
@@ -138,5 +138,23 @@
 
   .navbar-list.active {
     left: 0;
+  }
+
+  .container-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .close {
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary);
+    cursor: pointer;
   }
 }
