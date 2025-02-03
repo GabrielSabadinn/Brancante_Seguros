@@ -65,8 +65,20 @@
   cursor: pointer;
 }
 
-.hamburger.active {
-  font-size: 35px;
+.container-close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--red);
+  cursor: pointer;
 }
 
 .navbar-list.active {
