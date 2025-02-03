@@ -23,7 +23,7 @@ export function WppBtn({ width, height }: WhatsAppButtonProps) {
             onClick={handleOpenWhatsApp}
         >
             {/* <Ionicons name="logo-whatsapp" size={16} color="white" />*/}
-            <FaWhatsapp size={20} color="#ffffff" /> {/* Ícone do WhatsApp */}
+            <FaWhatsapp size={20} color="#ffffff" />
             <span className="whatsapp-button-text">{texts.readingBtnWpp}</span>
         </button>
     );

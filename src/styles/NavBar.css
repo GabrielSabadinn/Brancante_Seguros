@@ -75,9 +75,9 @@
 .close {
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
-  color: var(--red);
+  color: var(--primary);
   cursor: pointer;
 }
 

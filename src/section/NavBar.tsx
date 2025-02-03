@@ -3,7 +3,7 @@ import { menuItens } from "../constants/menuItens";
 import "../styles/NavBar.css";
 import Logo from "../assets/brancante-logo-bg-removed.png";
 import { useNavigate } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 const NavBar: React.FC = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -51,7 +51,7 @@ const NavBar: React.FC = () => {
         <ul className={`navbar-list ${menuActive ? "active" : ""}`}>
           <div className="container-close">
             <button className="close" onClick={toggleMenu}>
-              <FaTimes size={20} className="close" />
+              <FaArrowLeft className="close" />
             </button>
           </div>
           {menuItens.map((item, index) => (
