@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
   };
 
   const handleMenuClick = (route: string) => {
-    setMenuActive(false);
+    setMenuActive(false); // Fecha o menu quando qualquer item é clicado
 
     if (route === "Form") {
       navigate("/form");
@@ -23,11 +23,7 @@ const NavBar: React.FC = () => {
       navigate("/Mission");
     } else if (route === "Accidents") {
       navigate("/Accidents");
-    }
-    // else if (route === "Security") {
-    //   navigate("/Security");
-    // } 
-    else if (route === "Services") {
+    } else if (route === "Services") {
       navigate("/Services");
     } else if (route === "Business") {
       navigate("/Business");
