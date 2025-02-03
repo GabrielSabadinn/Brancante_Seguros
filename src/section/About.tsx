@@ -19,7 +19,7 @@ export function AboutSection() {
                 e do mercado segurador.
                 <br />
                 <br />
-                Estamos aqui para simplificar o que parece complexo: oferecer orientação clara na
+                <span className="text-indent"></span>Estamos aqui para simplificar o que parece complexo: oferecer orientação clara na
                 escolha do seguro ideal, com soluções personalizadas e uma equipe especializada
                 pronta para garantir sua tranquilidade. Seja para proteger sua embarcação ou
                 orientar no momento de um sinistro, nosso compromisso é com você.

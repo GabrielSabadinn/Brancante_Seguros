@@ -68,7 +68,6 @@ const Formulario = () => {
 
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
-      console.log("Dados a serem enviados:", formData);
 
       const response = await sendFormData(formData);
 

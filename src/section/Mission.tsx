@@ -14,9 +14,10 @@ export function MissionSection() {
                 aventuras.
                 <br />
                 <br />
-                É por isso que nossa equipe é treinada para
+                <span className="text-indent"></span>É por isso que nossa equipe é treinada para
                 entender suas necessidades e oferecer soluções sob medida, seja no
                 seguro náutico ou em outros ramos.
+
             </p>
         </div>
     )

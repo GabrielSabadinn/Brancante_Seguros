@@ -1,6 +1,7 @@
 import seguroNautico from "../assets/ads/01-seguro-nautico.jpeg";
 import seguroMarina from "../assets/ads/02-seguro-para-marina.jpeg";
 import seguroConosco from "../assets/ads/03-cote-seu-seguro-conosco.jpeg";
+import coverages from '../assets/screens/coverages.png';
 
 interface Ad {
   title: string;
@@ -28,5 +29,12 @@ export const ADS: Ad[] = [
       "A Brancante Seguros, com 25 anos de experiência no mercado náutico, oferece soluções personalizadas para garantir a tranquilidade da sua jornada.\n\nEntre em contato conosco e descubra as melhores opções para o seu barco.",
     imageSource: seguroConosco,
     hasWhatsAppButton: true,
+  },
+  {
+    title: "Jet Ski protegido, aventura garantida!",
+    description:
+      "A Brancante Seguros, em parceria com a Seguradora Essor, oferece o único seguro exclusivo para Jet Ski do mercado: o Jet Prime.\nEntre em contato e divirta-se sem preocupação!",
+    imageSource: coverages,
+
   },
 ];

@@ -1,4 +1,4 @@
-ls -l dist/assets .whatsapp-button {
+.whatsapp-button {
   display: flex;
   align-items: center;
   justify-content: center;

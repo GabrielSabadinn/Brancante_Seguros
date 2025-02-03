@@ -6,8 +6,8 @@
   background-color: var(--background);
   padding: 48px 24px 70px;
   height: 100%;
-  max-width: 1200px; 
-  margin: 0 auto; /
+  max-width: 1200px;
+  margin: 0 auto;/
 }
 
 .styled-image {
@@ -35,9 +35,14 @@
   margin-top: 16px;
   text-align: justify;
   margin-bottom: 72px;
-  max-width: 800px; 
+  max-width: 800px;
 }
 
+
+.text-indent {
+  margin-left: 20px !important;
+  display: inline-block !important;
+}
 
 @media (min-width: 1024px) {
   .container {
@@ -49,17 +54,17 @@
 
   .styled-image {
     flex: 1;
-    max-width: 50%; 
+    max-width: 50%;
   }
 
   .text-content {
     flex: 1;
     max-width: 50%;
-    padding-left: 40px; 
+    padding-left: 40px;
   }
 
   .screen-title {
-    font-size: 32px; 
+    font-size: 32px;
     text-align: left;
   }
 

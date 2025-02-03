@@ -1,5 +1,6 @@
 .pdf-modal {
   width: 90vw;
+  min-height: 90vh !important;
   max-width: 1000px;
   max-height: 90vh;
   border: none;

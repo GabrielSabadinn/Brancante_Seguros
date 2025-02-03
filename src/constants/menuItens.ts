@@ -20,10 +20,10 @@ export const menuItens = [
     title: 'Serviços e Benefícios',
     route: 'Services',
   },
-  {
-    title: 'Segurança',
-    route: 'Security',
-  },
+  // {
+  //   title: 'Segurança',
+  //   route: 'Security',
+  // },
   // -----------------
   {
     title: "Porque escolher a Brancante ?",

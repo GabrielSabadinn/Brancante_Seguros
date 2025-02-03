@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AboutSection } from './section/About'
 import { MissionSection } from './section/Mission'
 import { BusinessSection } from './section/Business'
-import SecuritySection from './section/SecuritySection'
 import { ServicesSection } from './section/Services'
 import { AccidentsSection } from './section/Accident'
 import { ToastContainer } from "react-toastify";
@@ -25,7 +24,7 @@ function App() {
                 <Route path="/Mission" element={<MissionSection />} />
                 <Route path="/Accidents" element={<AccidentsSection />} />
                 <Route path="/Services" element={<ServicesSection />} />
-                <Route path="/Security" element={<SecuritySection />} />
+                {/* <Route path="/Security" element={<SecuritySection />} /> */}
                 <Route path="/Business" element={<BusinessSection />} />
             </Routes>
             <Footer />

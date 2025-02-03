@@ -29,3 +29,9 @@
   text-align: justify;
   margin-bottom: 72px;
 }
+
+
+.text-indent {
+  margin-left: 20px !important;
+  display: inline-block !important;
+}

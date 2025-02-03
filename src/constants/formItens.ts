@@ -31,6 +31,7 @@ export const formItens = [
       { label: "Lancha", value: "lancha" },
       { label: "Veleiro", value: "veleiro" },
       { label: "Jet Ski", value: "jet-ski" },
+      { label: "Bote", value: "bote" },
     ],
   },
   {
