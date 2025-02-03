@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px 90px;
+    background-color: var(--background);
+}
+
+.styledImage {
+    width: auto;
+    height: 450px;
+    border-radius: 16px;
+}
+
+.screenTitle {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.screenText {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    text-align: justify;
+    margin-bottom: 102px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 72px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.listItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.listDescription {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.listText {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px 70px;
+        background-color: var(--background);
+    }
+
+
+    .styledImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 16px;
+        margin: 0;
+        background: none;
+    }
+
+}

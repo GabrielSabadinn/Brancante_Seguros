@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f0f2f5;
+}
+:root {
+  --background: #f0f2f5;
+  --primary: #072446;
+  --accent: #b30f3e;
+  --white: #ffffff;
+  --red: #ad113d;
+  --whatsapp: #25D366;
+
+  --zinc-50: #fafafa;
+  --zinc-200: #e4e4e7;
+  --zinc-500: #71717a;
+  font-family: 'Inter', sans-serif;
+}
