@@ -26,7 +26,7 @@ export const menuItens = [
   // },
   // -----------------
   {
-    title: "Porque escolher a Brancante ?",
+    title: "Porque escolher a Brancante?",
     route: "Business",
   },
   {

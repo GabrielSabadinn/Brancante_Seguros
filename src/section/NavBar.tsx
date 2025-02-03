@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
         </div>
 
         <button className="hamburger" onClick={toggleMenu}>
-          ☰
+          {menuActive ? "×" : "☰"}
         </button>
         <ul className={`navbar-list ${menuActive ? "active" : ""}`}>
           {menuItens.map((item, index) => (
