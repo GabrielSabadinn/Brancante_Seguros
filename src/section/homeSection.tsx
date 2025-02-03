@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HomeImage from "../assets/capa-livro-sabores-a-bordo.png";
-import "../styles/HomeStyle.css";
+import "../styles/homeStyle.css";
 import ReadingBtn from "../components/readingBtn";
 import CarouselSlider from "../components/carouselSlider";
 import PdfReader from "../components/pdfReader";
