@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import HomeImage from "../assets/capa-livro-sabores-a-bordo.png";
 import "../styles/homeStyle.css";
 import ReadingBtn from "../components/readingBtn";
+import DownloadPdf from "../components/dowloadPdf";
 import CarouselSlider from "../components/carouselSlider";
 import PdfReader from "../components/pdfReader";
 
@@ -17,7 +18,7 @@ const HomeSection: React.FC = () => {
       />
 
       <ReadingBtn func={() => setIsPdfOpen(true)} />
-
+      <DownloadPdf />
       <PdfReader isOpen={isPdfOpen} onClose={() => setIsPdfOpen(false)} />
 
       <CarouselSlider />

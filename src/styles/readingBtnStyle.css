@@ -8,6 +8,7 @@
   max-width: 500px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .reading-btn-text {
@@ -15,4 +16,6 @@
   font-size: 18px;
   font-weight: bold;
   background: none;
+
+  text-decoration: none;
 }

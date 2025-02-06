@@ -2,9 +2,9 @@ import emailjs from "@emailjs/browser";
 
 export const sendFormData = async (formData: any) => {
   try {
-    const serviceId = import.meta.env.VITE_SERVICE_ID;
-    const templateId = import.meta.env.VITE_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+    const serviceId = "service_anjv33e";
+    const templateId = "template_toz5a7p";
+    const publicKey = "GzyxRGXvVLHhbVXsw";
 
     const templateParams = {
       name: formData.name,
@@ -24,14 +24,16 @@ export const sendFormData = async (formData: any) => {
       termsAccepted: formData.termsAccepted ? "Sim" : "Não",
     };
 
-    const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
-
-    // alert("E-mail enviado com sucesso!");
+    const response = await emailjs.send(
+      serviceId,
+      templateId,
+      templateParams,
+      publicKey
+    );
 
     return response;
   } catch (error) {
     console.error("Erro ao enviar e-mail:", error);
-    // alert("Erro ao enviar o e-mail. Tente novamente.");
     return null;
   }
 };

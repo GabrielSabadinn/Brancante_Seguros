@@ -29,6 +29,7 @@ const Formulario = () => {
   );
 
   const [errors, setErrors] = useState<{ [key: string]: boolean }>({});
+  const [isLoading, setIsLoading] = useState(false); // Estado do loading
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -59,6 +60,8 @@ const Formulario = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true); // Inicia o loading
+
     const newErrors: { [key: string]: boolean } = {};
     requiredFields.forEach((field) => {
       if (!formData[field]) {
@@ -68,26 +71,21 @@ const Formulario = () => {
 
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
+      try {
+        const response = await sendFormData(formData);
 
-      const response = await sendFormData(formData);
-
-      if (response != null) {
-        showSuccessToast('E-mail enviado com sucesso!');
-      } else {
-        showErrorToast('Ocorreu um erro ao enviar o e-mail.');
+        if (response != null) {
+          showSuccessToast("E-mail enviado com sucesso!");
+        } else {
+          showErrorToast("Ocorreu um erro ao enviar o e-mail.");
+        }
+      } catch (error) {
+        showErrorToast("Erro inesperado ao enviar o formulário.");
       }
-      // const simulatedResponse = await simulateApiCall(formData);
-      // console.log("Resposta simulada da API:", simulatedResponse);
     }
-  };
 
-  // const simulateApiCall = (data: any) => {
-  //   return new Promise((resolve) => {
-  //     setTimeout(() => {
-  //       resolve({ message: "Dados recebidos com sucesso!", status: 200 });
-  //     }, 1000);
-  //   });
-  // };
+    setIsLoading(false); // Finaliza o loading
+  };
 
   return (
     <div className="form-page">
@@ -143,8 +141,8 @@ const Formulario = () => {
             )}
           </div>
         ))}
-        <button type="submit" className="submit-button">
-          Enviar
+        <button type="submit" className="submit-button" disabled={isLoading}>
+          {isLoading ? "Enviando..." : "Enviar"}
         </button>
       </form>
     </div>
